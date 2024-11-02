@@ -25,8 +25,8 @@ const Header: React.FC = () => {
               />
             </Link>
           </div>
-          <div className="h-full flex text-xs md:min-h-[4.8rem] items-end justify-center text-gray-700 ">
-            <span className="font-serif text-sm md:text-xl">Adhayan Academic Coaching<span className="text-[0.5rem]">{"(EduForge.ai)"}</span></span>
+          <div className="h-full flex text-xs justify-center text-gray-700 ">
+            <span className="font-serif text-sm md:text-xl">Adhayan Academic Coaching</span>
           </div>
         </div>
         <div className="text-xs mt-2 md:mt-0 text-gray-600 flex gap-2">
