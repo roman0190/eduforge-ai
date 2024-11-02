@@ -47,23 +47,11 @@ const WriteHere: React.FC = () => {
       setLoading(true);
 
       try {
-        const promptTemplate = process.env.NEXT_PUBLIC_PROMPT_TEMPLATE;
-
-        if (!promptTemplate) {
-          setErrorMessages([
-            "Prompt template is missing. Please check your environment variables.",
-          ]);
-          return;
-        }
-        const promptMessage = promptTemplate
-          .replace("{category}", categoryName)
-          .replace("{level}", levelName)
-          .replace("{topic}", topicName);
         const response = await axios.post(apiUrl, {
           messages: [
             {
               role: "user",
-              content: promptMessage,
+              content: `Write a ${categoryName} using ${levelName} Words on ${topicName} and follow study standard. Dont't use **,*. No title needed for "Paragraph, Essay, Story, Summary" ,Note:[if Paragraph: minimum 200-300 words and first give introduction based about the topic eg: what is it?,not more than 1pera; if Dialogue: minimum 200-300 words, Start with hi, hello, Good morning, afternoon, noon etc, add character name before sentence start eg. Roman:Hi, Musarof:Hello ,use different names ,must make 2 characters; if Report : Don't use first person eg.i,we,maximum 2para,use passive voice/inderect speech,maximum 120-150 words,must add heading-Staff/Reporter/Name,Place,Date like application; if Essay: minimum 600 word; if Application: must be formal and zip code not needed, start from Date; if Email: maximum 200-400 words; if Summary: maximum 100-200 word; if Story:must minmum 400words; if Notice : left top No.ABC/1110/Year,top right in the same line of No. write Date eg . Date month year,main part of notice ,then Name than position eg.Roman Howladar Headmaster; ] . Follow Bangladesh Writing Standard. Don't write any extra word like - Certainly! Here’s an essay composed according to the specified guidelines.`,
             },
           ],
           model: apiModel,
