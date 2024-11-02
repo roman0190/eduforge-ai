@@ -1,7 +1,5 @@
-// src/components/CategorySelect.tsx
 import React from "react";
 import { Select } from "antd";
-
 
 interface CategorySelectProps {
   categoryName: string;
