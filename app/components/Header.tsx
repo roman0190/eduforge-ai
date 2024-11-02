@@ -9,10 +9,10 @@ const Header: React.FC = () => {
       <div className="mx-[5%] flex flex-col md:flex-row items-center justify-between ">
         <div className="font-bold md:flex bg-slate-200 items-center">
           <Link
-            href={"https://www.facebook.com/profile.php?id=1000892557029280"}
+            href={"https://www.facebook.com/profile.php?id=100089255702928"}
           >
             <Image
-              src="/logoEF.svg"
+              src="/logo.png"
               alt="alt"
               width={1450}
               height={1480}

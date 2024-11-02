@@ -31,7 +31,7 @@ const OutputDisplay: React.FC<OutputDisplayProps> = ({
             </div>
             <div className="relative border-1 border-slate-400 p-4 bg-slate-100 shadow-lg">
               <img
-                src="/logoEF.svg"
+                src="/logo.png"
                 alt="alt"
                 className="absolute top-0 left-0 w-full h-full opacity-20 object-contain"
               />
