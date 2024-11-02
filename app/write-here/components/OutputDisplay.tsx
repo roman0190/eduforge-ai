@@ -2,7 +2,7 @@
 import React from "react";
 import { Button, Typography } from "antd";
 import { CopyOutlined, DownloadOutlined } from "@ant-design/icons";
-import Image from "next/image";
+// import Image from "next/image";
 
 const { Paragraph } = Typography;
 
@@ -30,8 +30,8 @@ const OutputDisplay: React.FC<OutputDisplayProps> = ({
               {categoryName} : {topicName}
             </div>
             <div className="relative border-1 border-slate-400 p-4 bg-slate-100 shadow-lg">
-              <Image
-                src="/logo.png"
+              <img
+                src="/logoEF.svg"
                 alt="alt"
                 className="absolute top-0 left-0 w-full h-full opacity-20 object-contain"
               />
