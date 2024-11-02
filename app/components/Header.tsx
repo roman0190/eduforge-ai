@@ -28,7 +28,6 @@ const Header: React.FC = () => {
           {"-"}
           <Link
             href={"https://www.facebook.com/mahamudulhasan.roman.73?mibextid=LQQJ4d"}
-            target="_blank"
           >
             <div className="hover:underline flex items-center space-x-1">
               <FacebookOutlined className="text-blue-500" />
