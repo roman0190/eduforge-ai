@@ -12,7 +12,7 @@ const Header: React.FC = () => {
     <header className="bg-gray-200 text-gray-800  shadow-2xl border-b-2 border-gray-500">
       <div className="mx-[5%] flex flex-col md:flex-row items-center justify-between ">
         <div className="font-bold md:flex items-center ">
-          <div className="flex  justify-center md:block ">
+          <div className="flex justify-center md:block md:mr-2 md:py-1">
             <Link
               href={"https://www.facebook.com/profile.php?id=100089255702928"}
             >
@@ -25,8 +25,8 @@ const Header: React.FC = () => {
               />
             </Link>
           </div>
-          <div className="h-full flex text-xs md:min-h-[4.8rem] items-end justify-center">
-            <span className="font-serif text-sm">Adhayan Academic Coaching<span className="text-[0.5rem]">{"(EduForge.ai)"}</span></span>
+          <div className="h-full flex text-xs md:min-h-[4.8rem] items-end justify-center text-gray-700 ">
+            <span className="font-serif text-sm md:text-xl">Adhayan Academic Coaching<span className="text-[0.5rem]">{"(EduForge.ai)"}</span></span>
           </div>
         </div>
         <div className="text-xs mt-2 md:mt-0 text-gray-600 flex gap-2">
