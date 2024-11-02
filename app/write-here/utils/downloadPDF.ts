@@ -1,7 +1,16 @@
-import html2pdf from "html2pdf.js";
+// utils/downloadPDF.ts
+export const downloadPDF = async (elementId: string, filename: string): Promise<void> => {
+  // Ensure this code only runs in the browser
+  if (typeof window === "undefined" || typeof document === "undefined") return;
 
-export const downloadPDF = (elementId: string, filename: string) => {
+  const { default: html2pdf } = await import("html2pdf.js"); 
+
   const element = document.getElementById(elementId);
+  if (!element) {
+    console.error(`Element with ID ${elementId} not found.`);
+    return;
+  }
+
   const options = {
     margin: 0.5,
     filename: filename,

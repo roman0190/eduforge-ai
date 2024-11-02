@@ -18,7 +18,7 @@ const WriteHere: React.FC = () => {
   const [errorMessages, setErrorMessages] = useState<string[]>([]);
   const [loading, setLoading] = useState(false);
 
-  const apiUrl = process.env.NEXT_PUBLIC_API_ENDPOINT || "defaultApiUrl";;
+  const apiUrl = process.env.NEXT_PUBLIC_API_ENDPOINT || "defaultApiUrl";
   const apiModel = process.env.NEXT_PUBLIC_API_MODEL;
 
   const handleCopy = () => {
@@ -53,7 +53,7 @@ const WriteHere: React.FC = () => {
           setErrorMessages([
             "Prompt template is missing. Please check your environment variables.",
           ]);
-          return; // Exit the function if template is missing
+          return;
         }
         const promptMessage = promptTemplate
           .replace("{category}", categoryName)
