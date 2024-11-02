@@ -79,7 +79,7 @@ const WriteHere: React.FC = () => {
         />
         <LevelSelect levelName={levelName} setLevelName={setLevelName} />
       </div>
-      <Button onClick={handleSubmit} disabled={loading}>
+      <Button type="primary" onClick={handleSubmit} disabled={loading}>
         {loading ? <Spin /> : "Find"}
       </Button>
       <OutputDisplay
