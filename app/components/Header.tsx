@@ -27,7 +27,7 @@ const Header: React.FC = () => {
           Developed by <span className="font-semibold">Roman Howladar</span>
           {"-"}
           <Link
-            href="https://www.facebook.com/mahamudulhasan.roman.73?mibextid=LQQJ4d"
+            href={"https://www.facebook.com/mahamudulhasan.roman.73?mibextid=LQQJ4d"}
             target="_blank"
           >
             <div className="hover:underline flex items-center space-x-1">
