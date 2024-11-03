@@ -26,21 +26,21 @@ const Header: React.FC = () => {
             </Link>
           </div>
           <div className="h-full flex text-xs justify-center text-gray-700 ">
-            <span className="font-serif text-sm md:text-xl">Adhayan Academic Coaching</span>
+            <span className="font-serif text-sm md:text-xl">
+              Adhayan Academic Coaching
+            </span>
           </div>
         </div>
         <div className="text-xs mt-2 md:mt-0 text-gray-600 flex gap-2">
-          Developed by <span className="font-semibold">Roman Howladar</span>
+          Developed by <span className="font-semibold">Xenon24</span>
           {"-"}
           <div className="hover:underline flex items-center space-x-1">
             <Link
-              href={
-                "https://www.facebook.com/mahamudulhasan.roman.73?mibextid=LQQJ4d"
-              }
+              href={"https://www.facebook.com/profile.php?id=61568169571150"}
             >
               <FacebookOutlined className="text-blue-500" />
             </Link>
-            <Link href={"https://github.com/roman0190"}>
+            <Link href={""}>
               <GithubOutlined className="text-blue-500" />
             </Link>
             <Link href={""}>
