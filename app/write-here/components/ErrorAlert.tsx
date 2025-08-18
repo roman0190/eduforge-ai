@@ -9,9 +9,9 @@ interface ErrorAlertProps {
 const ErrorAlert: React.FC<ErrorAlertProps> = ({ errorMessages }) => {
   return errorMessages.length > 0 ? (
     <Alert
-      message="Fill-up"
+      message="Please complete the following:"
       description={
-        <ul>
+        <ul className="mt-2 space-y-1 list-disc list-inside">
           {errorMessages.map((msg, index) => (
             <li key={index}>{msg}</li>
           ))}
@@ -19,7 +19,8 @@ const ErrorAlert: React.FC<ErrorAlertProps> = ({ errorMessages }) => {
       }
       type="error"
       showIcon
-      style={{ marginBottom: "16px", width: "100%" }}
+      closable
+      className="mb-4"
     />
   ) : null;
 };
