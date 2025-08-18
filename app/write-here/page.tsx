@@ -137,9 +137,6 @@ const WriteHere: React.FC = () => {
           return;
         }
 
-        // Handle other errors normally
-        setErrorMessages([errorMessage]);
-
         notification.error({
           message: "Generation Failed",
           description: "Failed to generate content. Please try again.",
