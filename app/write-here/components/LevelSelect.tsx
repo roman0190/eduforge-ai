@@ -1,5 +1,5 @@
 // src/components/LevelSelect.tsx
-import React from "react";
+import React, { useEffect } from "react";
 import { Select, Typography } from "antd";
 
 const { Text } = Typography;
@@ -21,6 +21,13 @@ const LevelSelect: React.FC<LevelSelectProps> = ({
     { value: "Simple", label: "Simple" },
     { value: "Creative", label: "Creative" },
   ];
+
+  // Set default level if none selected
+  useEffect(() => {
+    if (!levelName) {
+      setLevelName("Standard");
+    }
+  }, []);
 
   return (
     <div className="w-full space-y-2">
