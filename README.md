@@ -1,36 +1,138 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 EduForge AI
 
-## Getting Started
+## AI-Powered Content Generation for Students
 
-First, run the development server:
+EduForge AI is an intelligent writing assistant designed specifically for Bangladeshi students. It helps users generate high-quality educational content in various formats with just a few clicks.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+**Live Demo:** [https://eduforge-ai.vercel.app/](https://eduforge-ai.vercel.app/)
+
+![EduForge AI Screenshot](public/screenshot.png)
+
+## ✨ Features
+
+- **Multiple Content Types** - Essays, paragraphs, dialogues, applications, reports, emails, stories, and notices
+- **Voice Input** - Dictate your topics using speech recognition
+- **Professional PDF Export** - Download your content as beautifully formatted PDFs
+- **Mobile-Friendly Design** - Works perfectly on all devices
+- **Easy Content Sharing** - Copy to clipboard with a single click
+
+## 🛠️ Technical Stack
+
+- **Frontend:** React, Next.js 14, TypeScript
+- **UI Framework:** Ant Design, Tailwind CSS
+- **AI Integration:** Google Gemini API
+- **Deployment:** Vercel
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+- Google Gemini API key
+
+### Installation
+
+1. Clone the repository
+
+   ```bash
+   git clone https://github.com/roman0190/eduforge-ai.git
+   cd eduforge-ai
+   ```
+
+1. Install dependencies
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+1. Create a `.env` file in the root directory with your API key
+
+   ```plaintext
+   NEXT_PUBLIC_GEMINI_API_KEY=your_api_key_here
+   ```
+
+1. Start the development server
+
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```5. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## 📚 Usage Guide
+
+1. **Select Content Type** - Choose from essay, paragraph, dialogue, etc.
+2. **Choose Writing Style** - Select from various writing modes
+3. **Enter Topic** - Type or use voice input to specify your topic
+4. **Generate Content** - Click "Generate Content" and wait for the AI
+5. **Review & Export** - Copy the text or download as PDF
+
+## 🌟 Content Types
+
+| Type       | Features                          |
+|------------|-----------------------------------|
+| **Essay**  | Minimum 600 words, well-structured |
+| **Paragraph** | 200-300 words, single paragraph  |
+| **Dialogue** | Conversation between characters   |
+| **Report** | Formal structure with headers      |
+| **Application** | Formal request format          |
+| **Email**  | Professional email structure       |
+| **Story**  | Narrative with plot development    |
+| **Notice** | Official announcement format       |
+
+## 🔧 Customization
+
+You can modify the content generation prompts in:
+
+```typescript
+/app/write-here/utils/geminiAPI.ts
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+UI components can be found in:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```typescript
+/app/write-here/components/
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🧠 How It Works
 
-## Learn More
+1. User inputs are collected and validated
+2. A structured JSON prompt is sent to the Gemini API
+3. The response is processed and displayed to the user
+4. Users can export content in various formats
 
-To learn more about Next.js, take a look at the following resources:
+## 🔒 Privacy & Data
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- No user data is stored on servers
+- Content generation happens via secure API calls
+- PDF generation is performed client-side
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📱 Mobile Features
 
-## Deploy on Vercel
+- Responsive design works on all screen sizes
+- Voice input for easier mobile interaction
+- Touch-optimized controls
+- Efficient data usage
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚦 Limitations
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Requires internet connection
+- API has usage limits
+- Content should be reviewed for accuracy
+
+## 👨‍💻 Contributors
+
+- Roman Howladar - Lead Developer
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🙏 Acknowledgements
+
+- Google for providing the Gemini API
+- Vercel for hosting
+- All open-source libraries used in this project
